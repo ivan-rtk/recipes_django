@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<FONT FACE=" Arial" SIZE="5">
+<head>
+    <meta charset="UTF-8" style="font-size: 16px">
+    <title>{{ ingredient }}</title>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="card">
+            <h5 class="card-title">Рецепты</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Рецепт для {{ ingredient }}</h6>
+            <ul>
+                {% for k,v in recipe.items %}
+                    <li>{{k}}: {{v}}</li>
+                {% endfor %}
+            </ul>
+    </div>
+</div>
+</body>
+</html>
